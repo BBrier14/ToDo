@@ -27,4 +27,6 @@ function addTodo(event) {
 	trashButton.innerHTML = '<i class="fas fa-trash"></i>';
 	trashButton.classList.add('complete-btn');
 	todoDiv.appendChild(trashButton);
+	//Append List
+	todoList.appendChild(todoDiv);
 }
