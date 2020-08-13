@@ -33,3 +33,12 @@ function addTodo(event) {
 	//Clear input value
 	todoInput.value = '';
 }
+
+function deleteCheck(e) {
+	const item = e.target;
+	//Delete TODO
+	if (item.classList[0] === 'trash-btn') {
+		const todo = item.parentElement;
+		todo.remove();
+	}
+}
