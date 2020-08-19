@@ -79,3 +79,8 @@ function filterTodo(e) {
 		}
 	});
 }
+
+function saveLocalTodos(todo) {
+	//Check if todos exist
+	let todos;
+}
