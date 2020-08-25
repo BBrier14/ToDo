@@ -20,6 +20,8 @@ function addTodo(event) {
 	newTodo.innerText = todoInput.value;
 	newTodo.classList.add('todo-item');
 	todoDiv.appendChild(newTodo);
+	//Add Todo to Local Storage
+	saveLocalTodos(todoInput.value);
 	//Checkmark Button
 	const completedButton = document.createElement('button');
 	completedButton.innerHTML = '<i class="fas fa-check"></i>';
